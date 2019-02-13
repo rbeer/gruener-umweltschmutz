@@ -1,0 +1,57 @@
+{
+  "power": {
+    "icon": "power",
+    "label": "Strom",
+    "items": [{
+      "unit": "KWh",
+      "fuel": "Braunkohle",
+      "label": "Braunkohle",
+      "co2": 0.337
+    }, {
+      "unit": "KWh",
+      "fuel": "Steinkohle",
+      "label": "Steinkohle",
+      "co2": 0.407
+    }]
+  },
+  "transportation": {
+    "icon": "directions_car",
+    "label": "Verkehr",
+    "items": [{
+      "unit": "100 km",
+      "fuel": "Benzin",
+      "label": "[Benzin] Kleinwagen (3,7L/100km)",
+      "co2": 0.18
+    }, {
+      "unit": "100 km",
+      "fuel": "Benzin",
+      "label": "[Benzin] Mittelklasse (8,7L/100km)",
+      "co2": 0.25
+    }, {
+      "unit": "100 km",
+      "fuel": "Benzin",
+      "label": "[Benzin] Oberklasse (12,6L/100km)",
+      "co2": 0.32
+    }, {
+      "unit": "100 km",
+      "fuel": "Diesel",
+      "label": "[Diesel] Kleinwagen (4,5L/100km)",
+      "co2": 0.14
+    }, {
+      "unit": "100 km",
+      "fuel": "Diesel",
+      "label": "[Diesel] Mittelklasse (6,8L/100km)",
+      "co2": 0.21
+    }]
+  },
+  "food": {
+    "icon": "fastfood",
+    "label": "Essen",
+    "items": [{
+      "unit": "Stck",
+      "fuel": "",
+      "label": "Avocado",
+      "co2": 0.05
+    }]
+  }
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+$GREENS_YELLOW: rgb(255, 224, 0);
+$GREENS_GREEN_LIGHT: rgb(74, 147, 42);
+$GREENS_GREEN_DARK: rgb(10, 50, 30);
+
+* {
+    outline: none;
+}
+
+body {
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: $GREENS_GREEN_DARK;
+  background-color: rgb(230, 236, 240);
+  overflow-y: overlay;
+  overflow-x: hidden;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  nav .brand-logo {
+    display: none;
+  }
+}
+
+nav {
+  background-color: $GREENS_GREEN_LIGHT;
+  height: 56px;
+
+  .brand-logo {
+    color: $GREENS_YELLOW;
+
+    > i {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.material-icons {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.sidenav {
+  border: 0;
+  overflow: hidden;
+
+  li.title {
+    color: $GREENS_YELLOW;
+    display: block;
+    font-size: 130%;
+    font-weight: 500;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 32px;
+    background-color: $GREENS_GREEN_LIGHT;
+
+    > i {
+      transform: rotate(90deg);
+      vertical-align: middle;
+      margin-right: 0.2em;
+      margin-bottom: 3px;
+    }
+  }
+
+}
+
+#polluters {
+  overflow: overlay;
+  height: 50%;
+
+  li.polluter {
+    vertical-align: middle;
+    transition: background-color 0.3s ease-out;
+
+    img {
+      display: inline-block;
+      top: 8px;
+      float: right;
+      width: 32px;
+      height: 32px;
+    }
+
+    &.selected {
+      background-color: $GREENS_GREEN_LIGHT;
+    }
+  }
+}
+
+.input-field {
+  input {
+    font-weight: 500;
+    color: $GREENS_GREEN_DARK;
+
+    &[type=text]:focus {
+      border-bottom: 1px solid $GREENS_GREEN_DARK !important;
+      box-shadow: 0 1px 0 0 $GREENS_GREEN_DARK !important;
+      /* label focus color */
+      & + label {
+        color: $GREENS_GREEN_DARK !important;
+      }
+    }
+  }
+  label { color: $GREENS_GREEN_DARK !important; }
+}
+
+.autocomplete-content li > span {
+  color: $GREENS_GREEN_DARK;
+
+  & span.highlight {
+    color: $GREENS_GREEN_LIGHT;
+  }
+}
+
+#comparisons .input-field .prefix {
+  top: 0;
+}
+
+.select-wrapper input.select-dropdown {
+  height: 2rem;
+  line-height: 2rem;
+}
+.input-field {
+  margin: 0.5rem 0;
+}
+.select-dropdown.dropdown-content li.selected {
+  background-color: lighten($GREENS_GREEN_LIGHT, 20%) !important;
+}
+.select-dropdown li.disabled > span {
+  color: $GREENS_YELLOW;
+  background-color: $GREENS_GREEN_LIGHT !important;
+}
+.dropdown-content li > span {
+  color: $GREENS_GREEN_DARK;
+  font-size: 14px;
+}
+.select-dropdown li img {
+  width: 36px;
+  height: 36px;
+  float: left;
+}
+.dropdown-content {
+  overflow: overlay;
+}

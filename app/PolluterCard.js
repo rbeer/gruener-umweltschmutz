@@ -1,6 +1,8 @@
 import ChartCard from './ChartCard';
 
 export default class PolluterCard {
+  static insertPoint = document.getElementById('polluter');
+
   constructor(polluter) {
     this.name = polluter.name;
     this.trips = polluter.trips;
@@ -11,6 +13,10 @@ export default class PolluterCard {
   handleSelectionChange() {
     const trip = this.trips[this.selectElement.value];
     console.log(trip);
+  }
+
+  clear() {
+    Array.from(PolluterCard.insertPoint.children).forEach(childElement => childElement.remove());
   }
 
   insert() {
@@ -25,10 +31,16 @@ export default class PolluterCard {
         </div>
       </div>
     `);
-    document.getElementById('polluter').insertAdjacentHTML('beforeend', card);
+
+    PolluterCard.insertPoint.insertAdjacentHTML('beforeend', card);
     this.selectElement = document.querySelector('#trips select');
     this.selectElement.addEventListener('change', this.handleSelectionChange.bind(this));
     this.selectInstance = M.FormSelect.init(this.selectElement);
+  }
+
+  update() {
+    this.clear();
+    this.insert();
   }
 
   createSelectMarkup() {

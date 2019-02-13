@@ -16,5 +16,10 @@ import polluters from './polluters.json';
 
 SideNav.init();
 const polluterCard = new PolluterCard(polluters[0]);
-polluterCard.insert();
+polluterCard.update();
+
+window.setTimeout(() => {
+  (new PolluterCard(polluters[1])).update();
+}, 2000);
+
 ChartCard.init();

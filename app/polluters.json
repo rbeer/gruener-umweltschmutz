@@ -25,7 +25,12 @@
   },
   {
     "name": "Trauer",
-    "avatar": "luisa_neubauer.jpg"
+    "avatar": "luisa_neubauer.jpg",
+    "trips": [
+      { "destination": "Some", "co2": 680.2 },
+      { "destination": "Where", "co2": 648.4 },
+      { "destination": "Else", "co2": 232.8 }
+    ]
   },
   {
     "name": "Pauer",

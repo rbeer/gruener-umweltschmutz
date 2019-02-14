@@ -10,12 +10,9 @@ import 'materialize-css/dist/js/materialize.min.js';
 
 import SideNav from './SideNav';
 import PolluterCard from './PolluterCard';
-import ChartCard from './ChartCard';
 
 import polluters from './polluters.json';
 
 SideNav.init();
 const polluterCard = new PolluterCard(polluters[0]);
 polluterCard.update();
-
-ChartCard.init();

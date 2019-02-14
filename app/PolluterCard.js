@@ -1,4 +1,4 @@
-import ChartCard from './ChartCard';
+import ComparisonCollapsible from './ComparisonCollapsible';
 
 export default class PolluterCard {
   static insertPoint = document.getElementById('polluter');
@@ -12,8 +12,7 @@ export default class PolluterCard {
   }
 
   handleSelectionChange() {
-    const trip = this.trips[this.selectElement.value];
-    console.log(trip);
+    ComparisonCollapsible.insert(this.trips[this.selectElement.value]);
   }
 
   clear() {

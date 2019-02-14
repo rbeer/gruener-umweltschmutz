@@ -10,15 +10,34 @@ export default class SideNav {
   static init() {
     SideNav.populatePolluters();
     SideNav.instance = M.Sidenav.init(document.querySelector('.sidenav'));
-    AutoComplete.init(SideNav.instance.close.bind(SideNav.instance));
+    AutoComplete.init(SideNav.setSelection);
     if (window.innerWidth < 992) {
       SideNav.instance.open();
     }
   }
 
-  static replacePolluter(evt) {
-    evt.preventDefault();
-    const polluter = find(polluters, { name: evt.currentTarget.dataset.name });
+  static setSelection(eventOrName) {
+    let name;
+    if (eventOrName instanceof Event) {
+      eventOrName.preventDefault();
+      name = eventOrName.currentTarget.dataset.name;
+    } else {
+      name = eventOrName;
+    }
+
+    try {
+      document.querySelector('.polluter.selected').classList.remove('selected');
+    } catch (err) {}
+
+    const selected = document.querySelector(`#polluters li[data-name="${name}`);
+    selected.classList.add('selected');
+    selected.scrollIntoView();
+    AutoComplete.instance.el.value = '';
+    SideNav.replacePolluter(name);
+  }
+
+  static replacePolluter(name) {
+    const polluter = find(polluters, { name });
     const polluterCard = new PolluterCard(polluter);
     polluterCard.update();
     if (window.innerWidth < 992) {
@@ -43,6 +62,6 @@ export default class SideNav {
     pollutersContainer.insertAdjacentHTML('beforeend', entries);
 
     Array.from(document.querySelectorAll('#polluters li'))
-      .forEach(entry => entry.addEventListener('click', SideNav.replacePolluter));
+      .forEach(entry => entry.addEventListener('click', SideNav.setSelection));
   }
 }

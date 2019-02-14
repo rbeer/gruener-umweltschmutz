@@ -6,6 +6,7 @@ export default class PolluterCard {
   constructor(polluter) {
     this.name = polluter.name;
     this.trips = polluter.trips;
+    this.avatar = polluter.avatar;
     this.selectElement = null;
     this.selectInstance = null;
   }
@@ -23,8 +24,12 @@ export default class PolluterCard {
     const card = (`
       <div class="card">
         <div class="card-content">
-          <div class="row">
-            <div id="trips" class="col s12">
+          <div class="row valign-wrapper">
+            <div class="col s4 m2 center">
+                <img class="polluter-avatar responsive-img circle" src="./images/polluters/${this.avatar}" />
+            </div>
+            <div id="trips" class="col s8 m10">
+              <div class="polluter-name">${this.name}</div>
               ${this.createSelectMarkup()}
             </div>
           </div>
@@ -51,7 +56,7 @@ export default class PolluterCard {
     return (`
       <div class="input-field">
         <select data-type="trips">
-          <option value="" disabled selected>${this.name}</option>
+          <option value="" disabled selected>Flüge</option>
           ${options}
         </select>
       </div>

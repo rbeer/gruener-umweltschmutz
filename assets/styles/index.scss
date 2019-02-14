@@ -109,6 +109,15 @@ nav {
   }
 }
 
+#polluter {
+  .polluter-name {
+    font-size: 200%;
+  }
+  #trips {
+    margin-left: 20px;
+  }
+}
+
 .input-field {
   input {
     font-weight: 500;
@@ -132,10 +141,6 @@ nav {
   & span.highlight {
     color: $GREENS_GREEN_LIGHT;
   }
-}
-
-#comparisons .input-field .prefix {
-  top: 0;
 }
 
 .select-wrapper input.select-dropdown {

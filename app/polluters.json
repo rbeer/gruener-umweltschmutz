@@ -24,96 +24,23 @@
     ]
   },
   {
-    "name": "Trauer",
+    "name": "Foo",
     "avatar": "luisa_neubauer.jpg",
     "trips": [
-      { "destination": "Some", "co2": 680.2 },
-      { "destination": "Where", "co2": 648.4 },
-      { "destination": "Else", "co2": 232.8 }
+      { "destination": "Somewhere", "co2": 200.2 },
+      { "destination": "Over", "co2": 310.4 },
+      { "destination": "The", "co2": 45.8 },
+      { "destination": "Rainbow", "co2": 93.2 }
     ]
   },
   {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Pauer",
-    "avatar": "luisa_neubauer.jpg"
-  },
-  {
-    "name": "Meso",
-    "avatar": "luisa_neubauer.jpg"
+    "name": "Bar",
+    "avatar": "luisa_neubauer.jpg",
+    "trips": [
+      { "destination": "Pluto", "co2": 4502 },
+      { "destination": "Venus", "co2": 10 },
+      { "destination": "Mars", "co2": 201 },
+      { "destination": "Uranus", "co2": 605 }
+    ]
   }
 ]

@@ -11,6 +11,9 @@ export default class SideNav {
     SideNav.populatePolluters();
     SideNav.instance = M.Sidenav.init(document.querySelector('.sidenav'));
     AutoComplete.init(SideNav.instance.close.bind(SideNav.instance));
+    if (window.innerWidth < 992) {
+      SideNav.instance.open();
+    }
   }
 
   static replacePolluter(evt) {
@@ -18,12 +21,15 @@ export default class SideNav {
     const polluter = find(polluters, { name: evt.currentTarget.dataset.name });
     const polluterCard = new PolluterCard(polluter);
     polluterCard.update();
+    if (window.innerWidth < 992) {
+      SideNav.instance.close();
+    }
   }
 
   static createPolluterEntry(polluter) {
     return (`
-      <li class="polluter">
-        <a class="waves-effect" data-name="${polluter.name}">
+      <li class="polluter" data-name="${polluter.name}">
+        <a class="waves-effect">
           <img src="./images/polluters/${polluter.avatar}" class="circle" />
           <span>${polluter.name}</span>
         </a>
@@ -35,6 +41,8 @@ export default class SideNav {
     const pollutersContainer = document.getElementById('polluters');
     const entries = polluters.map(SideNav.createPolluterEntry).join('\n');
     pollutersContainer.insertAdjacentHTML('beforeend', entries);
-    document.querySelector('#polluters a').addEventListener('click', SideNav.replacePolluter);
+
+    Array.from(document.querySelectorAll('#polluters li'))
+      .forEach(entry => entry.addEventListener('click', SideNav.replacePolluter));
   }
 }

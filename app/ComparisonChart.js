@@ -1,15 +1,14 @@
 export default class ComparisonChart {
   constructor(category, trip, comparison) {
-    const tripData = {
-      type: 'bar',
-      x: comparison.items.map(item => item.label),
-      y: comparison.items.map(item => Math.round(trip.co2 / item.co2))
-    };
-
     this.trip = trip;
     this.comparison = comparison;
     this.category = category;
-    this.data = [tripData];
+
+    this.data = [{
+      type: 'bar',
+      x: comparison.items.map(item => item.label),
+      y: comparison.items.map(item => Math.round(trip.co2 / item.co2))
+    }];
     this.layout = {
       margin: { t: 0 },
       font: { family: 'Roboto' },
@@ -29,5 +28,14 @@ export default class ComparisonChart {
       this.layout,
       this.options
     );
+  }
+
+  update(trip) {
+    this.data = [{
+      type: 'bar',
+      x: this.comparison.items.map(item => item.label),
+      y: this.comparison.items.map(item => Math.round(trip.co2 / item.co2))
+    }];
+    this.insert();
   }
 }

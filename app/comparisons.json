@@ -2,6 +2,7 @@
   "power": {
     "icon": "power",
     "label": "Strom",
+    "title": "kannst du x KWh Strom verbrauchen",
     "items": [{
       "unit": "KWh",
       "fuel": "Braunkohle",
@@ -17,36 +18,38 @@
   "transportation": {
     "icon": "directions_car",
     "label": "Verkehr",
+    "title": "kannst du x km mit dem Auto fahren",
     "items": [{
-      "unit": "100 km",
+      "unit": "km",
       "fuel": "Benzin",
-      "label": "[Benzin] Kleinwagen (3,7L/100km)",
+      "label": "[Benzin] Kleinwagen",
       "co2": 0.18
     }, {
-      "unit": "100 km",
+      "unit": "km",
       "fuel": "Benzin",
-      "label": "[Benzin] Mittelklasse (8,7L/100km)",
+      "label": "[Benzin] Mittelklasse",
       "co2": 0.25
     }, {
-      "unit": "100 km",
+      "unit": "km",
       "fuel": "Benzin",
-      "label": "[Benzin] Oberklasse (12,6L/100km)",
+      "label": "[Benzin] Oberklasse",
       "co2": 0.32
     }, {
-      "unit": "100 km",
+      "unit": "km",
       "fuel": "Diesel",
-      "label": "[Diesel] Kleinwagen (4,5L/100km)",
+      "label": "[Diesel] Kleinwagen",
       "co2": 0.14
     }, {
-      "unit": "100 km",
+      "unit": "km",
       "fuel": "Diesel",
-      "label": "[Diesel] Mittelklasse (6,8L/100km)",
+      "label": "[Diesel] Mittelklasse",
       "co2": 0.21
     }]
   },
   "food": {
     "icon": "fastfood",
     "label": "Essen",
+    "title": "kannst du x Stück/KG/Liter essen",
     "items": [{
       "unit": "Stck",
       "fuel": "",

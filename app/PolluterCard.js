@@ -12,7 +12,7 @@ export default class PolluterCard {
   }
 
   handleSelectionChange() {
-    ComparisonCollapsible.insert(this.trips[this.selectElement.value]);
+    ComparisonCollapsible.insert(this.trips[this.selectElement.value], this.name);
   }
 
   clear() {

@@ -1,5 +1,3 @@
-import ComparisonCollapsible from './ComparisonCollapsible';
-
 export default class PolluterCard {
   static insertPoint = document.getElementById('polluter');
 
@@ -12,7 +10,8 @@ export default class PolluterCard {
   }
 
   handleSelectionChange() {
-    ComparisonCollapsible.insert(this.trips[this.selectElement.value], this.name);
+    const trip = this.trips[this.selectElement.value];
+    console.log(trip);
   }
 
   clear() {

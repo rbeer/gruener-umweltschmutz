@@ -29,7 +29,9 @@ export default class ComparisonCarousel {
 
   createItems(comparison) {
     return comparison.items.map(item => `
-      <li>${this.createComparisonText(comparison.textTemplate, item)}</li>
+      <li class="collection-item">
+        ${this.createComparisonText(comparison.textTemplate, item)}
+      </li>
     `).join('');
   }
 
@@ -37,7 +39,7 @@ export default class ComparisonCarousel {
     return comparisons.map(comparison => {
       return (`
           <div class="carousel-item comparison-content" data-comparison-category="${comparison.category}">
-            <ul>
+            <ul class="collection">
               ${this.createItems(comparison)}
             </ul>
           </div>

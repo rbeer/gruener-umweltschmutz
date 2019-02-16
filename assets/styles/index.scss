@@ -118,13 +118,15 @@ nav {
 }
 
 .carousel {
-  ul:not(.browser-default) > li {
-    list-style-type: square;
-    list-style-position: inside;
+  .carousel-item {
+    overflow: auto;
+    padding-bottom: 30px;
   }
+
   .indicators .indicator-item {
     height: 24px;
     width: 24px;
+    margin: 0 4px;
     background-color: none;
     color: $GREENS_GREEN_DARK;
 

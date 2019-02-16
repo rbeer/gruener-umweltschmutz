@@ -3,7 +3,7 @@
     "category": "power",
     "icon": "power",
     "label": "Strom",
-    "textTemplate": "<b>$[value] $[unit]</b> $[label]strom verbrauchen",
+    "textTemplate": "<span><b>$[value] $[unit]</b> $[label]strom verbrauchen</span>",
     "items": [{
       "unit": "KWh",
       "fuel": "Braunkohle",
@@ -22,7 +22,7 @@
     "category": "transportation",
     "icon": "directions_car",
     "label": "Verkehr",
-    "textTemplate": "<b>$[value] km</b> mit einem $[fuel] $[label]wagen fahren",
+    "textTemplate": "<span><b>$[value] km</b> mit einem $[fuel] $[label]wagen fahren</span>",
     "items": [{
       "unit": "km",
       "fuel": "Benzin",
@@ -54,7 +54,7 @@
     "category": "food",
     "icon": "fastfood",
     "label": "Essen",
-    "textTemplate": "<b>$[value] $[unit]</b> $[label] essen",
+    "textTemplate": "<span><b>$[value] $[unit]</b> $[label] essen</span>",
     "items": [
       {
         "label": "Butter",

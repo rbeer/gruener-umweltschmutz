@@ -116,23 +116,32 @@ nav {
     margin-left: 20px;
   }
 }
+#comparisons {
+  .carousel {
+    min-height: 400px;
 
-.carousel {
-  .carousel-item {
-    overflow: auto;
-    padding-bottom: 30px;
-  }
+    .carousel-item {
+      overflow: auto;
+      padding-bottom: 30px;
 
-  .indicators .indicator-item {
-    height: 24px;
-    width: 24px;
-    margin: 0 4px;
-    background-color: none;
-    color: $GREENS_GREEN_DARK;
+      img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+      }
+    }
 
-    &.active {
+    .indicators .indicator-item {
+      height: 24px;
+      width: 24px;
+      margin: 0 4px;
       background-color: none;
-      color: $GREENS_GREEN_LIGHT;
+      color: $GREENS_GREEN_DARK;
+
+      &.active {
+        background-color: none;
+        color: $GREENS_GREEN_LIGHT;
+      }
     }
   }
 }

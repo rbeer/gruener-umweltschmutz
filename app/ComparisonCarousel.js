@@ -11,17 +11,23 @@ export default class ComparisonCarousel {
   static insertPoint = document.getElementById('comparisons');
 
   createComparisonText(template, item) {
+    const _item = item;
     const tags = template.match(/\$\[(.*?)\]/g);
     const vars = tags.map(tag => tag.replace('$[', '').replace(']', ''));
-    const value = Math.round(this.trip.co2 / item.co2);
+    let value = Math.round(this.trip.co2 / item.co2);
     let text = template;
     let idx = 0;
 
+    if (_item.unit === 'g' && value > 1000) {
+      value = value / 1000;
+      _item.unit = 'kg';
+    }
+
     for (const tag of tags) {
       if (tag === '$[value]') {
-        text = text.replace(tag, value);
+        text = text.replace(tag, value.toLocaleString('de-DE'));
       }
-      text = text.replace(tag, item[vars[idx]]);
+      text = text.replace(tag, _item[vars[idx]]);
       idx++;
     }
 
@@ -31,7 +37,10 @@ export default class ComparisonCarousel {
   createItems(comparison) {
     return comparison.items.map(item => `
       <li class="collection-item">
-        ${this.createComparisonText(comparison.textTemplate, item)}
+        <div class="valign-wrapper">
+          <img src="./images/${comparison.category}/${item.image}" class="circle" />
+          ${this.createComparisonText(comparison.textTemplate, item)}
+        </div>
       </li>
     `).join('');
   }

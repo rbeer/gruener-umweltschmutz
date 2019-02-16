@@ -11,9 +11,10 @@ export default class ComparisonCarousel {
   static insertPoint = document.getElementById('comparisons');
 
   createComparisonText(template, item) {
-    const _item = item;
+    const _item = { ...item };
     const tags = template.match(/\$\[(.*?)\]/g);
     const vars = tags.map(tag => tag.replace('$[', '').replace(']', ''));
+
     let value = Math.round(this.trip.co2 / item.co2);
     let text = template;
     let idx = 0;
@@ -27,8 +28,9 @@ export default class ComparisonCarousel {
     for (const tag of tags) {
       if (tag === '$[value]') {
         text = text.replace(tag, value.toLocaleString('de-DE'));
+      } else {
+        text = text.replace(tag, _item[vars[idx]]);
       }
-      text = text.replace(tag, _item[vars[idx]]);
       idx++;
     }
 

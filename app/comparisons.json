@@ -3,7 +3,7 @@
     "category": "power",
     "icon": "power",
     "label": "Strom",
-    "textTemplate": "$[value]$[unit] $[label]strom verbrauchen",
+    "textTemplate": "<b>$[value] $[unit]</b> $[label]strom verbrauchen",
     "items": [{
       "unit": "KWh",
       "fuel": "Braunkohle",
@@ -22,7 +22,7 @@
     "category": "transportation",
     "icon": "directions_car",
     "label": "Verkehr",
-    "textTemplate": "$[value] km mit einem $[fuel] $[label]wagen fahren",
+    "textTemplate": "<b>$[value] km</b> mit einem $[fuel] $[label]wagen fahren",
     "items": [{
       "unit": "km",
       "fuel": "Benzin",
@@ -54,882 +54,882 @@
     "category": "food",
     "icon": "fastfood",
     "label": "Essen",
-    "textTemplate": "$[value]$[unit] $[label] essen",
+    "textTemplate": "<b>$[value] $[unit]</b> $[label] essen",
     "items": [
       {
         "label": "Butter",
         "unit": "g",
-        "co2": 0.092,
+        "co2": 0.0092,
         "image": "butter.jpg"
       },
       {
         "label": "Olivenöl",
         "unit": "g",
-        "co2": 0.0306,
+        "co2": 0.00306,
         "image": "olivenoel.jpg"
       },
       {
         "label": "Palmfett zum Braten",
         "unit": "g",
-        "co2": 0.0141,
+        "co2": 0.00141,
         "image": "palmoerl.jpg"
       },
       {
         "label": "Rapsöl",
         "unit": "g",
-        "co2": 0.0271,
+        "co2": 0.00271,
         "image": "rapsoel.jpg"
       },
       {
         "label": "Sonnenblumenöl",
         "unit": "g",
-        "co2": 0.0224,
+        "co2": 0.00224,
         "image": "sonnenblumenoel.jpg"
       },
       {
         "label": "Margarine",
         "unit": "g",
-        "co2": 0.0178,
+        "co2": 0.00178,
         "image": "margarine.jpg"
       },
       {
         "label": "Fisch (frisch)",
         "unit": "g",
-        "co2": 0.0629,
+        "co2": 0.00629,
         "image": "fisch_frisch.jpg"
       },
       {
         "label": "Fisch (gefroren)",
         "unit": "g",
-        "co2": 0.0409,
+        "co2": 0.00409,
         "image": "fisch_gefroren.jpg"
       },
       {
         "label": "Forelle",
         "unit": "g",
-        "co2": 0.0629,
+        "co2": 0.00629,
         "image": "forelle.jpg"
       },
       {
         "label": "Garnelen (gefroren)",
         "unit": "g",
-        "co2": 0.1259,
+        "co2": 0.01259,
         "image": "garnelen_gefroren.jpg"
       },
       {
         "label": "Hering",
         "unit": "g",
-        "co2": 0.0629,
+        "co2": 0.00629,
         "image": "hering.jpg"
       },
       {
         "label": "Kabeljau",
         "unit": "g",
-        "co2": 0.0629,
+        "co2": 0.00629,
         "image": "kabeljau.jpg"
       },
       {
         "label": "Lachs",
         "unit": "g",
-        "co2": 0.0629,
+        "co2": 0.00629,
         "image": "lachs.jpg"
       },
       {
         "label": "Makrele",
         "unit": "g",
-        "co2": 0.0629,
+        "co2": 0.00629,
         "image": "makrele.jpg"
       },
       {
         "label": "Muscheln",
         "unit": "g",
-        "co2": 0.0629,
+        "co2": 0.00629,
         "image": "muscheln.jpg"
       },
       {
         "label": "Rotbarsch",
         "unit": "g",
-        "co2": 0.0629,
+        "co2": 0.00629,
         "image": "rotbarsch.jpg"
       },
       {
         "label": "Eier",
         "unit": "g",
-        "co2": 0.0204,
+        "co2": 0.00204,
         "image": "eier.jpg"
       },
       {
         "label": "Frikadellen",
         "unit": "g",
-        "co2": 0.0258,
+        "co2": 0.00258,
         "image": "frikadellen.jpg"
       },
       {
         "label": "Hackfleisch, gemischt",
         "unit": "g",
-        "co2": 0.0559,
+        "co2": 0.00559,
         "image": "hackfleisch.jpg"
       },
       {
         "label": "Hamburger Patty (gefroren)",
         "unit": "g",
-        "co2": 0.0814,
+        "co2": 0.00814,
         "image": "hamburger.jpg"
       },
       {
         "label": "Hähnchenfleisch (gefroren)",
         "unit": "g",
-        "co2": 0.0392,
+        "co2": 0.00392,
         "image": "haehnchen_gefroren.jpg"
       },
       {
         "label": "Hähnchenfleisch, frisch",
         "unit": "g",
-        "co2": 0.037,
+        "co2": 0.0037,
         "image": "haehnchenfleisch_frisch.jpg"
       },
       {
         "label": "Lamm",
         "unit": "g",
-        "co2": 0.077,
+        "co2": 0.0077,
         "image": "lamm.jpg"
       },
       {
         "label": "Putenfleisch",
         "unit": "g",
-        "co2": 0.0422,
+        "co2": 0.00422,
         "image": "putenfleisch.jpg"
       },
       {
         "label": "Rindfleisch",
         "unit": "g",
-        "co2": 0.1229,
+        "co2": 0.01229,
         "image": "rindfleisch.jpg"
       },
       {
         "label": "Schweinefleisch",
         "unit": "g",
-        "co2": 0.0415,
+        "co2": 0.00415,
         "image": "schweinefleisch.jpg"
       },
       {
         "label": "Wildfleisch",
         "unit": "g",
-        "co2": 0.1048,
+        "co2": 0.01048,
         "image": "wildfleisch.jpg"
       },
       {
         "label": "Wurst",
         "unit": "g",
-        "co2": 0.0362,
+        "co2": 0.00362,
         "image": "wurst.jpg"
       },
       {
         "label": "Würstchen",
         "unit": "g",
-        "co2": 0.0377,
+        "co2": 0.00377,
         "image": "wuerstchen.jpg"
       },
       {
         "label": "Aubergine",
         "unit": "g",
-        "co2": 0.0029,
+        "co2": 0.00029,
         "image": "aubergine.jpg"
       },
       {
         "label": "Blumenkohl",
         "unit": "g",
-        "co2": 0.0043,
+        "co2": 0.00043,
         "image": "blumenkohl.jpg"
       },
       {
         "label": "Brokkoli",
         "unit": "g",
-        "co2": 0.0056,
+        "co2": 0.00056,
         "image": "brokoli.jpg"
       },
       {
         "label": "Brokkoli (gefroren)",
         "unit": "g",
-        "co2": 0.0093,
+        "co2": 0.00093,
         "image": "brokoli_gefroren.jpg"
       },
       {
         "label": "Champignon (hell oder dunkel)",
         "unit": "g",
-        "co2": 0.0131,
+        "co2": 0.00131,
         "image": "champignons.jpg"
       },
       {
         "label": "Champignons (Dose)",
         "unit": "g",
-        "co2": 0.0255,
+        "co2": 0.00255,
         "image": "champignons_dose.jpg"
       },
       {
         "label": "Eisbergsalat",
         "unit": "g",
-        "co2": 0.002,
+        "co2": 0.0002,
         "image": "eisbergsalat.jpg"
       },
       {
         "label": "Feldsalat",
         "unit": "g",
-        "co2": 0.0027,
+        "co2": 0.00027,
         "image": "feldsalat.jpg"
       },
       {
         "label": "Fenchel",
         "unit": "g",
-        "co2": 0.0024,
+        "co2": 0.00024,
         "image": "fenchel.jpg"
       },
       {
         "label": "Grünkohl, frisch",
         "unit": "g",
-        "co2": 0.0035,
+        "co2": 0.00035,
         "image": "gruenkohl_frisch.jpg"
       },
       {
         "label": "Gurke",
         "unit": "g",
-        "co2": 0.0045,
+        "co2": 0.00045,
         "image": "gurke.jpg"
       },
       {
         "label": "Karotte/Möhre",
         "unit": "g",
-        "co2": 0.0027,
+        "co2": 0.00027,
         "image": "moehren.jpg"
       },
       {
         "label": "Kartoffeln",
         "unit": "g",
-        "co2": 0.004,
+        "co2": 0.0004,
         "image": "kartoffeln.jpg"
       },
       {
         "label": "Kirschtomaten",
         "unit": "g",
-        "co2": 0.0091,
+        "co2": 0.00091,
         "image": "kirschtomaten.jpg"
       },
       {
         "label": "Kohlrabi",
         "unit": "g",
-        "co2": 0.0043,
+        "co2": 0.00043,
         "image": "kohlrabi.jpg"
       },
       {
         "label": "Kürbis",
         "unit": "g",
-        "co2": 0.0021,
+        "co2": 0.00021,
         "image": "kuerbis.jpg"
       },
       {
         "label": "Lauch",
         "unit": "g",
-        "co2": 0.0021,
+        "co2": 0.00021,
         "image": "lauch.jpg"
       },
       {
         "label": "Mais (Dose)",
         "unit": "g",
-        "co2": 0.012,
+        "co2": 0.0012,
         "image": "mais_dose.jpg"
       },
       {
         "label": "Paprika",
         "unit": "g",
-        "co2": 0.0064,
+        "co2": 0.00064,
         "image": "paprika.jpg"
       },
       {
         "label": "Rettich ",
         "unit": "g",
-        "co2": 0.0023,
+        "co2": 0.00023,
         "image": "rettich.jpg"
       },
       {
         "label": "Rosenkohl, frisch",
         "unit": "g",
-        "co2": 0.0028,
+        "co2": 0.00028,
         "image": "rosenkohl_frisch.jpg"
       },
       {
         "label": "Rosenkohl, gefroren",
         "unit": "g",
-        "co2": 0.0059,
+        "co2": 0.00059,
         "image": "rosenkohl_gefroren.jpg"
       },
       {
         "label": "Rote Beete (Glas)",
         "unit": "g",
-        "co2": 0.0136,
+        "co2": 0.00136,
         "image": "rote-beete_glas.jpg"
       },
       {
         "label": "Rote Beete, frisch",
         "unit": "g",
-        "co2": 0.0032,
+        "co2": 0.00032,
         "image": "rote-beete_frisch.jpg"
       },
       {
         "label": "Rotkohl (frisch)",
         "unit": "g",
-        "co2": 0.0042,
+        "co2": 0.00042,
         "image": "rotkohl_frisch.jpg"
       },
       {
         "label": "Rotkohl (Glas)",
         "unit": "g",
-        "co2": 0.0096,
+        "co2": 0.00096,
         "image": "rotkohl_glas.jpg"
       },
       {
         "label": "Rucola",
         "unit": "g",
-        "co2": 0.0027,
+        "co2": 0.00027,
         "image": "rucola.jpg"
       },
       {
         "label": "Salatmischung, gewaschen",
         "unit": "g",
-        "co2": 0.0028,
+        "co2": 0.00028,
         "image": "salatmischung.jpg"
       },
       {
         "label": "Sellerie",
         "unit": "g",
-        "co2": 0.0033,
+        "co2": 0.00033,
         "image": "sellerie.jpg"
       },
       {
         "label": "Spargel, grün",
         "unit": "g",
-        "co2": 0.0058,
+        "co2": 0.00058,
         "image": "spargel_gruen.jpg"
       },
       {
         "label": "Spargel, weiß",
         "unit": "g",
-        "co2": 0.0058,
+        "co2": 0.00058,
         "image": "spargel_weiss.jpg"
       },
       {
         "label": "Spinat (gefroren)",
         "unit": "g",
-        "co2": 0.0063,
+        "co2": 0.00063,
         "image": "spinat_gefroren.jpg"
       },
       {
         "label": "Spinat, frisch",
         "unit": "g",
-        "co2": 0.0029,
+        "co2": 0.00029,
         "image": "spinat_frisch.jpg"
       },
       {
         "label": "Süßkartoffel",
         "unit": "g",
-        "co2": 0.0041,
+        "co2": 0.00041,
         "image": "suesskartoffeln.jpg"
       },
       {
         "label": "Tomate",
         "unit": "g",
-        "co2": 0.0077,
+        "co2": 0.00077,
         "image": "tomate.jpg"
       },
       {
         "label": "Tomate (Dose)",
         "unit": "g",
-        "co2": 0.0187,
+        "co2": 0.00187,
         "image": "tomate_dose.jpg"
       },
       {
         "label": "Tomate (Gewächshaus)",
         "unit": "g",
-        "co2": 0.0292,
+        "co2": 0.00292,
         "image": "tomate.jpg"
       },
       {
         "label": "Weißkohl",
         "unit": "g",
-        "co2": 0.004,
+        "co2": 0.0004,
         "image": "weisskohl.jpg"
       },
       {
         "label": "Wirsing",
         "unit": "g",
-        "co2": 0.003,
+        "co2": 0.0003,
         "image": "wirsing.jpg"
       },
       {
         "label": "Zucchini",
         "unit": "g",
-        "co2": 0.0025,
+        "co2": 0.00025,
         "image": "zucchini.jpg"
       },
       {
         "label": "Zwiebeln",
         "unit": "g",
-        "co2": 0.0025,
+        "co2": 0.00025,
         "image": "zwiebel.jpg"
       },
       {
         "label": "Brötchen, Vollkorn",
         "unit": "g",
-        "co2": 0.006,
+        "co2": 0.0006,
         "image": "broetchen_vollkorn.jpg"
       },
       {
         "label": "Brötchen, Weißmehl",
         "unit": "g",
-        "co2": 0.0062,
+        "co2": 0.00062,
         "image": "broetchen_hell.jpg"
       },
       {
         "label": "Bulgur",
         "unit": "g",
-        "co2": 0.0052,
+        "co2": 0.00052,
         "image": "bulgur.jpg"
       },
       {
         "label": "Couscous",
         "unit": "g",
-        "co2": 0.0044,
+        "co2": 0.00044,
         "image": "couscous.jpg"
       },
       {
         "label": "Haferflocken",
         "unit": "g",
-        "co2": 0.0036,
+        "co2": 0.00036,
         "image": "haferflocken.jpg"
       },
       {
         "label": "Hirse",
         "unit": "g",
-        "co2": 0.0052,
+        "co2": 0.00052,
         "image": "hirse.jpg"
       },
       {
         "label": "Knäckebrot",
         "unit": "g",
-        "co2": 0.0053,
+        "co2": 0.00053,
         "image": "knaeckebrot.jpg"
       },
       {
         "label": "Nudeln",
         "unit": "g",
-        "co2": 0.0046,
+        "co2": 0.00046,
         "image": "nudeln.jpg"
       },
       {
         "label": "Nudeln, Vollkorn",
         "unit": "g",
-        "co2": 0.0044,
+        "co2": 0.00044,
         "image": "nudeln_vollkorn.jpg"
       },
       {
         "label": "Quinoa",
         "unit": "g",
-        "co2": 0.0065,
+        "co2": 0.00065,
         "image": "quinoa.jpg"
       },
       {
         "label": "Reis",
         "unit": "g",
-        "co2": 0.0305,
+        "co2": 0.00305,
         "image": "reis.jpg"
       },
       {
         "label": "Toast",
         "unit": "g",
-        "co2": 0.0048,
+        "co2": 0.00048,
         "image": "toast.jpg"
       },
       {
         "label": "Toast, Vollkorn",
         "unit": "g",
-        "co2": 0.0046,
+        "co2": 0.00046,
         "image": "toast_vollkorn.jpg"
       },
       {
         "label": "Vollkornbrot",
         "unit": "g",
-        "co2": 0.0059,
+        "co2": 0.00059,
         "image": "vollkornbrot.jpg"
       },
       {
         "label": "Weißbrot",
         "unit": "g",
-        "co2": 0.0061,
+        "co2": 0.00061,
         "image": "weissbrot.jpg"
       },
       {
         "label": "Weizenmehl",
         "unit": "g",
-        "co2": 0.0034,
+        "co2": 0.00034,
         "image": "weizenmehl.jpg"
       },
       {
         "label": "Bohnen",
         "unit": "g",
-        "co2": 0.0074,
+        "co2": 0.00074,
         "image": "bohnen.jpg"
       },
       {
         "label": "Bohnen (Dose)",
         "unit": "g",
-        "co2": 0.0121,
+        "co2": 0.00121,
         "image": "bohnen_dose.jpg"
       },
       {
         "label": "Erbsen, grün",
         "unit": "g",
-        "co2": 0.0078,
+        "co2": 0.00078,
         "image": "erbsen.jpg"
       },
       {
         "label": "Erbsen, grün (Dose)",
         "unit": "g",
-        "co2": 0.0124,
+        "co2": 0.00124,
         "image": "erbsen_dose.jpg"
       },
       {
         "label": "Erdnüsse, ganz",
         "unit": "g",
-        "co2": 0.0067,
+        "co2": 0.00067,
         "image": "erdnuesse.jpg"
       },
       {
         "label": "Kichererbsen (Dose)",
         "unit": "g",
-        "co2": 0.0125,
+        "co2": 0.00125,
         "image": "kichererbsen_dose.jpg"
       },
       {
         "label": "Leinsamen",
         "unit": "g",
-        "co2": 0.0116,
+        "co2": 0.00116,
         "image": "leinsamen.jpg"
       },
       {
         "label": "Linsen",
         "unit": "g",
-        "co2": 0.0061,
+        "co2": 0.00061,
         "image": "linsen.jpg"
       },
       {
         "label": "Tofu",
         "unit": "g",
-        "co2": 0.0166,
+        "co2": 0.00166,
         "image": "tofu.jpg"
       },
       {
         "label": "Walnüsse",
         "unit": "g",
-        "co2": 0.0095,
+        "co2": 0.00095,
         "image": "walnuesse.jpg"
       },
       {
         "label": "Creme Fraiche",
         "unit": "g",
-        "co2": 0.0419,
+        "co2": 0.00419,
         "image": "creme-fraiche.jpg"
       },
       {
         "label": "Fetakäse",
         "unit": "g",
-        "co2": 0.0647,
+        "co2": 0.00647,
         "image": "fetakaese.jpg"
       },
       {
         "label": "Frischkäse",
         "unit": "g",
-        "co2": 0.0565,
+        "co2": 0.00565,
         "image": "frischkaese.jpg"
       },
       {
         "label": "H-Milch",
         "unit": "g",
-        "co2": 0.0138,
+        "co2": 0.00138,
         "image": "h-milch.jpg"
       },
       {
         "label": "Joghurt",
         "unit": "g",
-        "co2": 0.0237,
+        "co2": 0.00237,
         "image": "joghurt.jpg"
       },
       {
         "label": "Käse",
         "unit": "g",
-        "co2": 0.0582,
+        "co2": 0.00582,
         "image": "kaese.jpg"
       },
       {
         "label": "Magerquark",
         "unit": "g",
-        "co2": 0.0252,
+        "co2": 0.00252,
         "image": "magerquark.jpg"
       },
       {
         "label": "Milch",
         "unit": "g",
-        "co2": 0.0144,
+        "co2": 0.00144,
         "image": "h-milch.jpg"
       },
       {
         "label": "Mozzarella",
         "unit": "g",
-        "co2": 0.0434,
+        "co2": 0.00434,
         "image": "mozzarella.jpg"
       },
       {
         "label": "Quark (40 % Fett)",
         "unit": "g",
-        "co2": 0.034,
+        "co2": 0.0034,
         "image": "magerquark.jpg"
       },
       {
         "label": "Sahne",
         "unit": "g",
-        "co2": 0.0431,
+        "co2": 0.00431,
         "image": "sahne.jpg"
       },
       {
         "label": "Saure Sahne",
         "unit": "g",
-        "co2": 0.0305,
+        "co2": 0.00305,
         "image": "saure-sahne.jpg"
       },
       {
         "label": "Schmand",
         "unit": "g",
-        "co2": 0.0366,
+        "co2": 0.00366,
         "image": "schmand.jpg"
       },
       {
         "label": "Ananas (Dose)",
         "unit": "g",
-        "co2": 0.0171,
+        "co2": 0.00171,
         "image": "ananas_dose.jpg"
       },
       {
         "label": "Ananas, frisch",
         "unit": "g",
-        "co2": 0.0074,
+        "co2": 0.00074,
         "image": "ananas_frisch.jpg"
       },
       {
         "label": "Apfel",
         "unit": "g",
-        "co2": 0.0025,
+        "co2": 0.00025,
         "image": "apfel.jpg"
       },
       {
         "label": "Aprikosen (Dose)",
         "unit": "g",
-        "co2": 0.017,
+        "co2": 0.0017,
         "image": "aprikosen_dose.jpg"
       },
       {
         "label": "Aprikosen, frisch",
         "unit": "g",
-        "co2": 0.0054,
+        "co2": 0.00054,
         "image": "aprikose_frisch.jpg"
       },
       {
         "label": "Avocado",
         "unit": "g",
-        "co2": 0.0051,
+        "co2": 0.00051,
         "image": "avocado.jpg"
       },
       {
         "label": "Banane",
         "unit": "g",
-        "co2": 0.0057,
+        "co2": 0.00057,
         "image": "banane.jpg"
       },
       {
         "label": "Birne",
         "unit": "g",
-        "co2": 0.0029,
+        "co2": 0.00029,
         "image": "birne.jpg"
       },
       {
         "label": "Brombeeren",
         "unit": "g",
-        "co2": 0.0069,
+        "co2": 0.00069,
         "image": "brombeeren.jpg"
       },
       {
         "label": "Erdbeeren (gefroren)",
         "unit": "g",
-        "co2": 0.0071,
+        "co2": 0.00071,
         "image": "erdbeeren_gefroren.jpg"
       },
       {
         "label": "Erdbeeren, frisch",
         "unit": "g",
-        "co2": 0.0032,
+        "co2": 0.00032,
         "image": "erdbeeren_frisch.jpg"
       },
       {
         "label": "Feigen",
         "unit": "g",
-        "co2": 0.0089,
+        "co2": 0.00089,
         "image": "feigen.jpg"
       },
       {
         "label": "Granatapfel",
         "unit": "g",
-        "co2": 0.0039,
+        "co2": 0.00039,
         "image": "granatabpfel.jpg"
       },
       {
         "label": "Heidelbeeren (gefroren)",
         "unit": "g",
-        "co2": 0.0064,
+        "co2": 0.00064,
         "image": "heidelbeeren_gefroren.jpg"
       },
       {
         "label": "Heidelbeeren, frisch",
         "unit": "g",
-        "co2": 0.0054,
+        "co2": 0.00054,
         "image": "heidelbeeren_frisch.jpg"
       },
       {
         "label": "Himbeere, frisch",
         "unit": "g",
-        "co2": 0.012,
+        "co2": 0.0012,
         "image": "himbeeren.jpg"
       },
       {
         "label": "Himbeere, gefroren",
         "unit": "g",
-        "co2": 0.0066,
+        "co2": 0.00066,
         "image": "himbeeren_gefroren.jpg"
       },
       {
         "label": "Kirschen",
         "unit": "g",
-        "co2": 0.0022,
+        "co2": 0.00022,
         "image": "kirschen.jpg"
       },
       {
         "label": "Kiwi",
         "unit": "g",
-        "co2": 0.0066,
+        "co2": 0.00066,
         "image": "kiwi.jpg"
       },
       {
         "label": "Mango",
         "unit": "g",
-        "co2": 0.0173,
+        "co2": 0.00173,
         "image": "mango.jpg"
       },
       {
         "label": "Maracuja /Passionsfrucht",
         "unit": "g",
-        "co2": 0.023,
+        "co2": 0.0023,
         "image": "maracuja.jpg"
       },
       {
         "label": "Nektarine",
         "unit": "g",
-        "co2": 0.0032,
+        "co2": 0.00032,
         "image": "nektarine.jpg"
       },
       {
         "label": "Oliven",
         "unit": "g",
-        "co2": 0.0145,
+        "co2": 0.00145,
         "image": "oliven.jpg"
       },
       {
         "label": "Orange / Apfelsine",
         "unit": "g",
-        "co2": 0.0035,
+        "co2": 0.00035,
         "image": "orange.jpg"
       },
       {
         "label": "Pfirsich",
         "unit": "g",
-        "co2": 0.0032,
+        "co2": 0.00032,
         "image": "pfirsich.jpg"
       },
       {
         "label": "Pfirsich (Dose)",
         "unit": "g",
-        "co2": 0.0152,
+        "co2": 0.00152,
         "image": "pfirsich_dose.jpg"
       },
       {
         "label": "Pflaume",
         "unit": "g",
-        "co2": 0.0022,
+        "co2": 0.00022,
         "image": "pflaume.jpg"
       },
       {
         "label": "Rosinen",
         "unit": "g",
-        "co2": 0.0093,
+        "co2": 0.00093,
         "image": "rosinen.jpg"
       },
       {
         "label": "Stachelbeeren",
         "unit": "g",
-        "co2": 0.0069,
+        "co2": 0.00069,
         "image": "stachelbeeren.jpg"
       },
       {
         "label": "Wassermelone",
         "unit": "g",
-        "co2": 0.0035,
+        "co2": 0.00035,
         "image": "wassermelone.jpg"
       },
       {
         "label": "Weintrauben",
         "unit": "g",
-        "co2": 0.0037,
+        "co2": 0.00037,
         "image": "weintrauben.jpg"
       },
       {
         "label": "Zitrone",
         "unit": "g",
-        "co2": 0.0036,
+        "co2": 0.00036,
         "image": "zitrone.jpg"
       },
       {
         "label": "Honig",
         "unit": "g",
-        "co2": 0.0192,
+        "co2": 0.00192,
         "image": "honig.jpg"
       },
       {
         "label": "Kokosmilch",
         "unit": "g",
-        "co2": 0.0054,
+        "co2": 0.00054,
         "image": "kokosmilch.jpg"
       },
       {
         "label": "Puderzucker",
         "unit": "g",
-        "co2": 0.0049,
+        "co2": 0.00049,
         "image": "puderzucker.jpg"
       },
       {
         "label": "Soja Drink",
         "unit": "g",
-        "co2": 0.0067,
+        "co2": 0.00067,
         "image": "soja-drink.jpg"
       },
       {
         "label": "Zucker",
         "unit": "g",
-        "co2": 0.006,
+        "co2": 0.0006,
         "image": "zucker.jpg"
       }
     ]

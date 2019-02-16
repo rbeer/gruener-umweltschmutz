@@ -1,7 +1,11 @@
+import State from './State';
+import ComparisonCarousel from 'ComparisonCarousel';
+
 export default class PolluterCard {
   static insertPoint = document.getElementById('polluter');
 
   constructor(polluter) {
+    this.polluter = polluter;
     this.name = polluter.name;
     this.trips = polluter.trips;
     this.avatar = polluter.avatar;
@@ -10,12 +14,26 @@ export default class PolluterCard {
   }
 
   handleSelectionChange() {
-    const trip = this.trips[this.selectElement.value];
-    console.log(trip);
+    State.changeComparison(this.polluter, this.selectElement.value);
   }
 
   clear() {
     Array.from(PolluterCard.insertPoint.children).forEach(childElement => childElement.remove());
+  }
+
+  createSelectMarkup() {
+    const options = this.trips.map((trip, idx) => `
+      <option value="${idx}">${trip.destination}</option>
+    `).join('');
+
+    return (`
+      <div class="input-field">
+        <select data-type="trips">
+          <option value="" disabled selected>Flüge</option>
+          ${options}
+        </select>
+      </div>
+    `);
   }
 
   insert() {
@@ -35,29 +53,16 @@ export default class PolluterCard {
       </div>
     `);
 
+    if (PolluterCard.insertPoint.children.length > 0) {
+      this.clear();
+    }
     PolluterCard.insertPoint.insertAdjacentHTML('beforeend', card);
     this.selectElement = document.querySelector('#trips select');
     this.selectElement.addEventListener('change', this.handleSelectionChange.bind(this));
     this.selectInstance = M.FormSelect.init(this.selectElement);
   }
 
-  update() {
-    this.clear();
-    this.insert();
-  }
-
-  createSelectMarkup() {
-    const options = this.trips.map((trip, idx) => `
-      <option value="${idx}">${trip.destination}</option>
-    `).join('');
-
-    return (`
-      <div class="input-field">
-        <select data-type="trips">
-          <option value="" disabled selected>Flüge</option>
-          ${options}
-        </select>
-      </div>
-    `);
+  destroy() {
+    this.selectInstance.destroy();
   }
 }

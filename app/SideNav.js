@@ -1,6 +1,8 @@
 import find from 'lodash.find';
 
 import polluters from './polluters.json';
+
+import State from './State';
 import AutoComplete from './AutoComplete';
 import PolluterCard from './PolluterCard';
 
@@ -38,8 +40,7 @@ export default class SideNav {
 
   static replacePolluter(name) {
     const polluter = find(polluters, { name });
-    const polluterCard = new PolluterCard(polluter);
-    polluterCard.update();
+    State.changePolluter(polluter);
     if (window.innerWidth < 992) {
       SideNav.instance.close();
     }

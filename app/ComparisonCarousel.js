@@ -5,6 +5,7 @@ export default class ComparisonCarousel {
     this.instance = null;
     this.polluter = polluter;
     this.trip = polluter.trips[tripIdx];
+    this.indicatorTooltips = [];
   }
 
   static insertPoint = document.getElementById('comparisons');
@@ -74,7 +75,7 @@ export default class ComparisonCarousel {
       );
       indicator.dataset.position = "top";
       indicator.dataset.tooltip = comparisons[idx].label;
-      M.Tooltip.init(indicator);
+      this.indicatorTooltips.push(M.Tooltip.init(indicator));
     });
   }
 
@@ -90,6 +91,12 @@ export default class ComparisonCarousel {
     );
 
     this.setIndicatorIcons();
+  }
+
+  destroy() {
+    this.indicatorTooltips.forEach(tooltip => tooltip.destroy());
+    this.instance.destroy();
+    ComparisonCarousel.insertPoint.firstElementChild.remove();
   }
 
 }

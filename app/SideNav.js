@@ -4,7 +4,6 @@ import polluters from './polluters.json';
 
 import State from './State';
 import AutoComplete from './AutoComplete';
-import PolluterCard from './PolluterCard';
 
 export default class SideNav {
   static instance = null;

@@ -19,7 +19,8 @@ export default class ComparisonCarousel {
     let idx = 0;
 
     if (_item.unit === 'g' && value > 1000) {
-      value = value / 1000;
+      value = (value / 1000).toLocaleString('de-DE');
+      value = value.slice(0, value.indexOf(',') + 2);
       _item.unit = 'kg';
     }
 

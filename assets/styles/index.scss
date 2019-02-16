@@ -62,7 +62,6 @@ nav {
   user-select: none;
 }
 
-
 .sidenav {
   border: 0;
   overflow: hidden;
@@ -118,9 +117,22 @@ nav {
   }
 }
 
-.chart-title {
-  font-size: 150%;
-  margin-bottom: 1rem;
+.carousel {
+  ul:not(.browser-default) > li {
+    list-style-type: square;
+    list-style-position: inside;
+  }
+  .indicators .indicator-item {
+    height: 24px;
+    width: 24px;
+    background-color: none;
+    color: $GREENS_GREEN_DARK;
+
+    &.active {
+      background-color: none;
+      color: $GREENS_GREEN_LIGHT;
+    }
+  }
 }
 
 .input-field {

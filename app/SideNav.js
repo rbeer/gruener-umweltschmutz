@@ -1,4 +1,5 @@
 import find from 'lodash.find';
+import sortBy from 'lodash.sortby';
 
 import polluters from './polluters.json';
 
@@ -62,7 +63,7 @@ export default class SideNav {
 
   static populatePolluters() {
     const pollutersContainer = document.getElementById('polluters');
-    const entries = polluters.map(SideNav.createPolluterEntry).join('\n');
+    const entries = sortBy(polluters, ['name']).map(SideNav.createPolluterEntry).join('\n');
     pollutersContainer.insertAdjacentHTML('beforeend', entries);
 
     Array.from(document.querySelectorAll('#polluters li'))

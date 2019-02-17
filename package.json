@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
     "build": "webpack -p --progress --mode production --config webpack.config.build.js",
-    "dist": "npm r build && rm -rf ../gruener-umweltschmutz-dist/* && mv ./dist/* ../gruener-umweltschmutz-dist"
+    "dist": "npm run build && rm -rf ../gruener-umweltschmutz-dist/* && mv ./dist/* ../gruener-umweltschmutz-dist"
   },
   "repository": {
     "type": "git",

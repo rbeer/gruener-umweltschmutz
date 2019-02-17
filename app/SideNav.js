@@ -42,6 +42,11 @@ export default class SideNav {
     if (window.innerWidth < 992) {
       SideNav.instance.close();
     }
+    window.scrollTo({
+      left: 0,
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
   static createPolluterEntry(polluter) {

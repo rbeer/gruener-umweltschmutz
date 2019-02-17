@@ -1,21 +1,18 @@
-/**
- * Application entry point
- */
-
-// Load application styles
 import 'materialize-css/dist/css/materialize.min.css';
 import 'styles/index.scss';
 
 import 'materialize-css/dist/js/materialize.min.js';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import SideNav from './SideNav';
 
+smoothscroll.polyfill();
 SideNav.init();
 
 console.log(`
 Some images presented on this website are protected by their respective license.\n
 
-Otmar von Holtz: Foto AG Gymnasium Melle, CC-BY-SA 3.0
+Ottmar von Holtz: Foto AG Gymnasium Melle, CC-BY-SA 3.0
 Renate Künast: CC-BY-SA 3.0
 Robert Habeck: CC-BY-SA 4.0
 Dieter Janecek: CC-BY-SA 3.0

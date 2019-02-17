@@ -13,7 +13,6 @@ export default class State {
     }
     State.cards.polluterCard = new PolluterCard(polluter);
     State.cards.polluterCard.insert();
-    window.scrollTo(0, 0);
   }
 
   static changeComparison(polluter, tripIdx) {
@@ -22,6 +21,5 @@ export default class State {
     }
     State.cards.comparisonCarousel = new ComparisonCarousel(polluter, tripIdx);
     State.cards.comparisonCarousel.insert();
-    window.setTimeout(() => window.scrollTo(0, 200), 100);
   }
 };

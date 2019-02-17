@@ -1,5 +1,4 @@
 import State from './State';
-import ComparisonCarousel from 'ComparisonCarousel';
 
 export default class PolluterCard {
   static insertPoint = document.getElementById('polluter');
@@ -59,7 +58,15 @@ export default class PolluterCard {
     PolluterCard.insertPoint.insertAdjacentHTML('beforeend', card);
     this.selectElement = document.querySelector('#trips select');
     this.selectElement.addEventListener('change', this.handleSelectionChange.bind(this));
-    this.selectInstance = M.FormSelect.init(this.selectElement);
+    this.selectInstance = M.FormSelect.init(this.selectElement, {
+      dropdownOptions: {
+        onCloseEnd: () => window.scrollTo({
+          left:0,
+          top: 200,
+          behavior: 'smooth'
+        })
+      }
+    });
   }
 
   destroy() {

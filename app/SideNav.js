@@ -30,7 +30,7 @@ export default class SideNav {
       currentSelection.classList.remove('selected');
     }
 
-    const selected = document.querySelector(`#polluters li[data-name="${name}`);
+    const selected = document.querySelector(`#polluters li[data-name="${name}"]`);
     selected.classList.add('selected');
     selected.scrollIntoView();
     AutoComplete.instance.el.value = '';

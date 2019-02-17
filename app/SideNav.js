@@ -12,9 +12,6 @@ export default class SideNav {
     SideNav.populatePolluters();
     SideNav.instance = M.Sidenav.init(document.querySelector('.sidenav'));
     AutoComplete.init(SideNav.setSelection);
-    if (window.innerWidth < 992) {
-      SideNav.instance.open();
-    }
   }
 
   static setSelection(eventOrName) {

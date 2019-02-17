@@ -87,7 +87,7 @@ nav {
 }
 
 #polluters {
-  overflow: overlay;
+  overflow: auto;
   height: 50%;
 
   li.polluter {
@@ -193,7 +193,4 @@ nav {
   width: 36px;
   height: 36px;
   float: left;
-}
-.dropdown-content {
-  overflow: overlay;
 }

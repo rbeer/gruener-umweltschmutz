@@ -1,5 +1,3 @@
-import sortBy from 'lodash.sortby';
-
 import State from './State';
 
 export default class PolluterCard {
@@ -23,7 +21,7 @@ export default class PolluterCard {
   }
 
   createSelectMarkup() {
-    const options = sortBy(this.trips, ['destination']).map((trip, idx) => `
+    const options = this.trips.map((trip, idx) => `
       <option value="${idx}">${trip.destination}</option>
     `).join('');
 

@@ -27,26 +27,31 @@
       "unit": "km",
       "fuel": "Benzin",
       "label": "Klein",
+      "image": "kleinwagen.jpg",
       "co2": 0.18
     }, {
       "unit": "km",
       "fuel": "Benzin",
       "label": "Mittelklasse",
+      "image": "mittelklasse.jpg",
       "co2": 0.25
     }, {
       "unit": "km",
       "fuel": "Benzin",
       "label": "Oberklasse",
+      "image": "oberklasse.jpg",
       "co2": 0.32
     }, {
       "unit": "km",
       "fuel": "Diesel",
       "label": "Klein",
+      "image": "kleinwagen.jpg",
       "co2": 0.14
     }, {
       "unit": "km",
       "fuel": "Diesel",
       "label": "Mittelklasse",
+      "image": "mittelklasse.jpg",
       "co2": 0.21
     }]
   },

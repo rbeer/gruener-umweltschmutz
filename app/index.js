@@ -20,6 +20,8 @@ Katrin Göring-Eckardt: CC-BY-SA 2.0
 Cem Özdemir: GFDL 1.2
 Katharina Schulze: CC BY-SA 3.0
 
+Oberklassewagen, Mittelklassewagen, Kleinwagen: CC-BY-SA-3.0
+
 https://creativecommons.org/licenses/by-sa/2.0
 https://creativecommons.org/licenses/by-sa/3.0
 https://creativecommons.org/licenses/by-sa/4.0

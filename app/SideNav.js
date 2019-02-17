@@ -15,6 +15,8 @@ export default class SideNav {
   }
 
   static setSelection(eventOrName) {
+    const currentSelection = document.querySelector('.polluter.selected');
+
     let name;
     if (eventOrName instanceof Event) {
       eventOrName.preventDefault();
@@ -23,9 +25,9 @@ export default class SideNav {
       name = eventOrName;
     }
 
-    try {
-      document.querySelector('.polluter.selected').classList.remove('selected');
-    } catch (err) {}
+    if (currentSelection) {
+      currentSelection.classList.remove('selected');
+    }
 
     const selected = document.querySelector(`#polluters li[data-name="${name}`);
     selected.classList.add('selected');

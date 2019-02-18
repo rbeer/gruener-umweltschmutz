@@ -59,7 +59,7 @@
     "category": "food",
     "icon": "fastfood",
     "label": "Essen",
-    "textTemplate": "<span><b>$[value] $[unit]</b> $[label] essen</span>",
+    "textTemplate": "<span><b>$[value] $[unit]</b> $[label] konsumieren</span>",
     "items": [
       {
         "label": "Butter",
